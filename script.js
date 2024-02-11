@@ -1,6 +1,17 @@
-const mouse = document.querySelector(".projetos")
+
+const Myobserver = new IntersectionObserver( (entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting === true) {
+            entry.target.classList.add('show')
+        } else{
+            entry.target.classList.remove('show')
+        }
+    })
+})
 
 
-function action() {
-    mouse.width = mouse.width *2
-}
+const elements = document.querySelectorAll(".hiden")
+
+elements.forEach((element)=> Myobserver.observe(element))
+
+Myobserver.observe(elements)
