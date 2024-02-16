@@ -5,7 +5,7 @@
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
-   
+
 }
 
 .merriweather-light-italic {
@@ -52,21 +52,21 @@
 
 
 
-body{
+body {
     background-color: #000000;
 }
 
-.hiden{
+.hiden {
     opacity: 0;
     filter: blur(15px);
-    transition: all 2s;
+    transition: all 1s;
     transform: translateX(-100%);
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
-    transition: all 2s;
+    transition: all 1s;
     transform: translateX(0);
 }
 
@@ -141,7 +141,7 @@ header {
     font-size: 38px;
 }
 
-#div_hiden_section_info{
+#div_hiden_section_info {
     width: 50%;
 }
 
@@ -190,6 +190,71 @@ p {
     height: 58vh;
 }
 
+.img_desktop {
+    position: absolute;
+}
+
+.slider {
+    width: 552px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 570px;
+}
+
+.manual_navigation {
+    width: 640px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.manual_btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual_btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+.manual_btn.radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
 .img_wel_div {
     width: 63%;
     display: flex;
@@ -225,28 +290,7 @@ span {
     letter-spacing: 1.5px;
 }
 
-.div_img_celphone {
-    width: 300px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-}
 
-#img_celphone {
-    width: 300px;
-    border: solid 1px aqua;
-    border-radius: 41px;
-}
-
-.img_desktop {
-    width: 520px;
-    position: absolute;
-}
-
-.video_desktop {
-    width: 402px;
-    margin: 70px 0 0 57px;
-}
 
 #section_projetos {
     background-color: #000000;
@@ -272,11 +316,11 @@ h3 {
     gap: 40px;
 }
 
-#div_projetos :nth-child(2){
+#div_projetos :nth-child(2) {
     transition-delay: 500ms;
 }
 
-#div_projetos :nth-child(3){
+#div_projetos :nth-child(3) {
     transition-delay: 1000ms;
 }
 
@@ -291,24 +335,29 @@ h3 {
 }
 
 .projetos {
-    width: 100px;
-    height: 150px;
-    border: solid 2px aqua;
+    width: 200px;
+    height: 300px;
+    border-top: solid 1px aqua;
+    border-left: solid 1px aqua;
     border-radius: 22px;
     background-color: #7c7c7c;
     padding-top: 11px;
     text-align: center;
 
+    box-shadow: 6px 6px 15px aqua;
+
+    /*
     transition-duration: 1.1s;
     transition-delay: 0, 5s;
+
+*/
 }
 
-
+/*
 .projetos:hover {
-    width: 200px;
-    height: 300px;
+    
 
-    box-shadow: 0 0 50px aqua;
+    
 
 
     p {
@@ -318,23 +367,21 @@ h3 {
         margin: 20px auto;
     }
 }
-
+*/
 .paraNemeProjet {
     font-weight: 900;
-    font-size: 18px;
+    font-size: 25px;
     line-height: normal;
-    color: #000000;
+    background: -webkit-linear-gradient(#f0f08486, #5ab1f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 .paraDescritionProjet {
-    font-size: 2px;
-    width: 70px;
+    font-size: 14px;
     margin: 0 auto;
     line-height: normal;
-
-    transition-duration: 1.1s;
-    transition-delay: 0, 5s;
 }
 
 
