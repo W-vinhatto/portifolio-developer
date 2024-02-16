@@ -71,7 +71,7 @@
                     <p id="sobre"> Sobre mim!
                     </p>
 
-                    <p class="decrition">Sou <span> WELLINGTON VINHATTO </span> Profissional atualmente
+                    <p class="decrition">Sou Profissional atualmente
                         em transição de carreira da área de Rede IOT. Para área de desenvolvimento Web.
                     </p>
 
@@ -89,15 +89,54 @@
 
     <div class="hiden">
         <section class="section_dados" id="section_cell_desck">
-            <div class="div_img_celphone">
-                <img id="img_celphone"
-                    src="./assets/Mao_Segurando_Celular_PNG_Sem_Fundo_Transparente_Alta_Resolucao.png" alt="">
-            </div>
 
             <div class="div_img_desktop">
                 <img class="img_desktop" src="./assets/tv.png" alt="">
-                <video class="video_desktop" src="./assets/My.mp4" autoplay muted loop></video>
+
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons-->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <!--slider img-->
+                        <div class="slide_frist">
+                            <img src="./assets/img-slider/photo-arvore.avif" alt="img1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/img-slider/photo-barco.jpg" alt="img2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/img-slider/photo-geleira.avif" alt="img3">
+                        </div>
+
+                        <div class="slide">
+                            <img src="./assets/img-slider/photo-por-do-sol.jpg" alt="img4">
+                        </div>
+                        <!--navegation auto-->
+                        <div class="navegation_auto">
+                            <div class="auto_btn_1"></div>
+                            <div class="auto_btn_2"></div>
+                            <div class="auto_btn_3"></div>
+                            <div class="auto_btn_4"></div>
+                        </div>
+
+                    </div>
+
+                    <!--manual navegation-->
+                    <div class="manual_navigation">
+                        <label for="radio1" class="manual_btn"></label>
+                        <label for="radio2" class="manual_btn"></label>
+                        <label for="radio3" class="manual_btn"></label>
+                        <label for="radio4" class="manual_btn"></label>
+                    </div>
+                </div>
             </div>
+
         </section>
     </div>
 
@@ -143,7 +182,17 @@
     <footer>
         <p id="PFooter">Copyright ₢ 2024 - Criado e Desenvolvido por <span>Wellington Vinhatto</span></p>
     </footer>
+
+    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".projetos"),{
+            max:25,
+            speed: 4000,
+            glare: true,
+            "max-glare": 2
+        });
+    </script>
 </body>
 <script src="./script.js"></script>
-
 </html>
