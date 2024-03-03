@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header>
         <img id="logo_title" src="./assets/1.png" alt="logo">
 
@@ -23,7 +24,7 @@
                 class="link_header">Instagram</a>
             <a href="https://github.com/W-vinhatto" class="link_header">GitHub</a>
             <a href="" class="link_header">Projetos</a>
-            <a href="" class="link_header">Contatos</a>
+            <a class="link_header" onclick="contato()">Contatos</a>
         </div>
     </header>
 
@@ -35,7 +36,7 @@
         <a href="https://github.com/W-vinhatto" class="link_section"><img src="./assets/github.png" width="80px"
                 alt="logo-github"></a>
         <a href="" class="link_section"><img src="./assets/pasta-aberta.png" width="80px" alt="logo-projetos"></a>
-        <a href="" class="link_section"><img src="./assets/o-email.png" width="80px" alt="logo-email"></a>
+        <a onclick="contato()" class="link_section"><img src="./assets/o-email.png" width="80px" alt="logo-email"></a>
         <a href="https://wa.me/qr/YLYUIEORCQL3N1" class="link_section"><img src="./assets/whatsapp.png" width="80px"
                 alt="logo-whats"></a>
     </ul>
@@ -91,53 +92,33 @@
         <section class="section_dados" id="section_cell_desck">
 
             <div class="div_img_desktop">
-                <img class="img_desktop" src="./assets/tv.png" alt="">
+                <img class="img_desktop" src="./assets/tv.png" alt=""> 
 
-                <div class="slider">
-                    <div class="slides">
-                        <!--radio buttons-->
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
+                <ul class="slider">
+                    <li class="slider-li">
+                        <input class="slider-input" type="radio" id="slide1" name="slide" checked>
+                        <label class="slider-label" for="slide1"></label>
+                        <img class="slider-img" src="./assets/img-slider/photo-arvore.avif" />
+                    </li>
+                    <li class="slider-li">
+                        <input class="slider-input" type="radio" id="slide2" name="slide" checked>
+                        <label class="slider-label" for="slide2"></label>
+                        <img class="slider-img" src="./assets/img-slider/photo-barco.jpg" />
+                    </li>
+                    <li class="slider-li">
+                        <input class="slider-input" type="radio" id="slide3" name="slide" checked>
+                        <label class="slider-label" for="slide3"></label>
+                        <img class="slider-img" src="./assets/img-slider/photo-por-do-sol.jpg" />
+                    </li>
+                </ul>
 
-                        <!--slider img-->
-                        <div class="slide_frist">
-                            <img src="./assets/img-slider/photo-arvore.avif" alt="img1">
-                        </div>
 
-                        <div class="slide">
-                            <img src="./assets/img-slider/photo-barco.jpg" alt="img2">
-                        </div>
-
-                        <div class="slide">
-                            <img src="./assets/img-slider/photo-geleira.avif" alt="img3">
-                        </div>
-
-                        <div class="slide">
-                            <img src="./assets/img-slider/photo-por-do-sol.jpg" alt="img4">
-                        </div>
-                        <!--navegation auto-->
-                        <div class="navegation_auto">
-                            <div class="auto_btn_1"></div>
-                            <div class="auto_btn_2"></div>
-                            <div class="auto_btn_3"></div>
-                            <div class="auto_btn_4"></div>
-                        </div>
-
-                    </div>
-
-                    <!--manual navegation-->
-                    <div class="manual_navigation">
-                        <label for="radio1" class="manual_btn"></label>
-                        <label for="radio2" class="manual_btn"></label>
-                        <label for="radio3" class="manual_btn"></label>
-                        <label for="radio4" class="manual_btn"></label>
-                    </div>
-                </div>
             </div>
 
-        </section>
+
+    </div>
+
+    </section>
     </div>
 
     <section id="section_projetos" class="hiden">
@@ -148,46 +129,58 @@
         <div id="div_projetos">
             <div class="div_espande, hiden">
                 <aside class="projetos">
-                    <img src="./assets/netflix.png" width="70px" alt="logo-netflix">
-                    <h3 class="paraNemeProjet">Clone NetFlix</h3>
-                    <p class="paraDescritionProjet">descrição total do projeto netflix com fonte
-                        pequena e cor preta que irá sumir no funfo
-                        quando espandir div</p>
-                </aside>
-            </div>
-            <div class="div_espande, hiden">
-                <aside class="projetos">
-                    <img src="./assets/dinheiro.png" width="70px" alt="logotipo-conversor">
-                    <div class="teste">
-                        <h3 class="paraNemeProjet">Conversor</h3>
-                        <p class="paraDescritionProjet">descrição total do projeto netflix com
-                            fonte pequena e cor preta que irá
-                            sumir no funfo quando espandir div</p>
-
+                    <div class="trasition_opacity">
+                        <img src="./assets/netflix.png" width="70px" alt="logo-netflix">
+                        <h3 class="paraNemeProjet">Clone NetFlix</h3>
+                        <p class="paraDescritionProjet">descrição total do projeto netflix com fonte
+                            pequena e cor preta que irá sumir no funfo
+                            quando espandir div</p>
                     </div>
                 </aside>
             </div>
             <div class="div_espande, hiden">
                 <aside class="projetos">
-                    <img src="./assets/super-mario.png" width="70px" alt="logo-super-mario">
-                    <h3 class="paraNemeProjet">Super Mario</h3>
-                    <p class="paraDescritionProjet">descrição total do projeto netflix
-                        com fonte pequena e cor preta que irá
-                        sumir no funfo quando espandir div</p>
+                    <div class="trasition_opacity">
+                        <img src="./assets/dinheiro.png" width="70px" alt="logotipo-conversor">
+                        <h3 class="paraNemeProjet">Conversor</h3>
+                        <p class="paraDescritionProjet">descrição total do projeto netflix com
+                            fonte pequena e cor preta que irá
+                            sumir no funfo quando espandir div</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="div_espande, hiden">
+                <aside class="projetos">
+                    <div class="trasition_opacity">
+                        <img src="./assets/super-mario.png" width="70px" alt="logo-super-mario">
+                        <h3 class="paraNemeProjet">Super Mario</h3>
+                        <p class="paraDescritionProjet">descrição total do projeto netflix
+                            com fonte pequena e cor preta que irá
+                            sumir no funfo quando espandir div</p>
+                    </div>
                 </aside>
             </div>
         </div>
     </section>
 
+    <form class="formulario_name" action="https://formcarry.com/s/ti8_GD4cxVQ" method="POST"
+        enctype="multipart/form-data">
+        <input class="input_form" type="text" placeholder="Dados" name="nome">
+        <input class="input_form" type="tel" placeholder="Contato para retorno" name="telefone">
+        <textarea id="text_area" cols="30" rows="10"
+            placeholder="Deixe sua sugestão ou Breve descrição sobre oque precisa!" name="deixe sua duvida"></textarea>
+        <button onclick="escForm()" class="button_form">Enviar email</button>
+    </form>
+
     <footer>
         <p id="PFooter">Copyright ₢ 2024 - Criado e Desenvolvido por <span>Wellington Vinhatto</span></p>
     </footer>
 
-    
+
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        VanillaTilt.init(document.querySelectorAll(".projetos"),{
-            max:25,
+        VanillaTilt.init(document.querySelectorAll(".projetos"), {
+            max: 25,
             speed: 4000,
             glare: true,
             "max-glare": 2
@@ -195,4 +188,5 @@
     </script>
 </body>
 <script src="./script.js"></script>
+
 </html>
