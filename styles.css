@@ -192,8 +192,7 @@ p {
 }
 
 #section_cell_desck {
-    height: 58vh;
-    padding: 0;
+    padding-bottom: 80px;
     gap: 0;
 }
 
