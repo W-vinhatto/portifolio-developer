@@ -121,7 +121,7 @@ header {
             rgba(0, 0, 0, 0.3164609593837535) 25%,
             rgba(1, 2, 4, 0.9691220238095238) 75%);
 
-    height: 78vh;
+   
 }
 
 #ul_link {
@@ -186,9 +186,9 @@ p {
     justify-content: center;
     gap: 8%;
     border-top: solid #ffffff;
-    padding-left: 17rem;
+    padding: 40px 0 40px 17rem;
 
-    height: 70vh;
+    
 }
 
 #section_cell_desck {
@@ -226,16 +226,14 @@ p {
 
     opacity: 0;
     visibility: hidden;
+
+    
+    transition: all 1.3s;
 }
 
 .slider-input {
-    display: none;
+    background-color: white;
 
-   
-}
-
-.slider-label {
-    background-color:#ffffff;
     bottom: -37px;
     cursor: pointer;
     display: block;
@@ -247,15 +245,19 @@ p {
     border-radius: 7px;
 }
 
-.slider li:nth-child(1) label {
+.slider-label {
+    width: 1px;
+}
+
+.slider li:nth-child(1) input {
     right: 25%;
 }
 
-.slider li:nth-child(2) label {
+.slider li:nth-child(2) input {
     right: 50%;
 }
 
-.slider li:nth-child(3) label {
+.slider li:nth-child(3) input {
     right: 75%;
 }
 
@@ -313,7 +315,7 @@ span {
     text-align: center;
     padding-top: 30px;
     border-top: solid #ffffff;
-    height: 70vh;
+   padding-bottom: 60px;
 
 }
 
@@ -448,7 +450,7 @@ footer {
     justify-content: center;
     border-top: solid #ffffff;
 
-    height: 10vh;
+    padding: 20px 0;
 }
 
 #PFooter {
@@ -465,7 +467,7 @@ footer {
     }
 
     .section_dados{
-        padding: 0;
+        padding: 40px;
     }
 
     #linear{
@@ -485,7 +487,7 @@ footer {
     }
 
     .section_dados{
-        padding: 0;
+        padding: 40px;
     }
 
     .decrition{
