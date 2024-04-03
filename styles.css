@@ -218,9 +218,8 @@ p {
 
 .slider-img {
     margin: auto;
-    height: 293px;
-    width: 600px;
-    border-radius: 29px;
+    height: 266px;
+    width: 568px;
     vertical-align: top;
 
     opacity: 0;
@@ -249,15 +248,15 @@ p {
 }
 
 .slider li:nth-child(1) input {
-    right: 25%;
+    right: 0%;
 }
 
 .slider li:nth-child(2) input {
-    right: 50%;
+    right: 41%;
 }
 
 .slider li:nth-child(3) input {
-    right: 75%;
+    right: 83%;
 }
 
 
@@ -385,9 +384,10 @@ h3 {
 
 
 .paraDescritionProjet {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0 auto;
     line-height: normal;
+    font-weight: bolder;
 }
 
 
@@ -564,7 +564,7 @@ footer {
     }
 
     .section_dados{
-        height: auto;
+        padding: 0;
     }
 
     #sobre_descrition{
@@ -590,4 +590,10 @@ footer {
     footer{
         text-align: center;
     }
+
+
+.trasition_opacity{
+    opacity: 1;
+}
+
 }
