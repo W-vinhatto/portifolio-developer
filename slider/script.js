@@ -13,7 +13,7 @@ prevDom.onclick = function () {
 
 
 let timeRunning = 3000
-let timeAutonext = 7000
+let timeAutonext = 10000
 let rumTimeout;
 let rumAutoRum  = setTimeout(() => {
     nextDom.click();

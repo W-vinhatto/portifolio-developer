@@ -60,6 +60,13 @@ a{
     cursor: pointer;
 }
 
+#whats{
+    position: fixed;
+    bottom: 10px;
+    right: 9px;
+    z-index: 101;
+}
+
 
 .hiden {
     opacity: 0;
@@ -77,12 +84,9 @@ a{
 
 
 header {
-    background: black;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px 0;
+    justify-content: end;
+    padding: 5px 40px 0;
 }
 
 #logo_title {
@@ -101,6 +105,11 @@ header {
     text-decoration: none;
     color: white;
     font-size: 25px;
+}
+
+.entrSlider{
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -127,18 +136,16 @@ header {
 #ul_link {
     background: #7c7c7c87;
     width: 260px;
-    height: 383px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 22px;
     padding: 32px 37px;
     border-radius: 18px;
     z-index: 3;
 
     position: fixed;
-    top: 15rem;
     left: 8rem;
+    top: 35vw;
 }
 
 .link_section {
@@ -190,83 +197,6 @@ p {
 
     
 }
-
-#section_cell_desck {
-    padding-bottom: 80px;
-    gap: 0;
-}
-
-.img_desktop {
-    position: absolute;
-    z-index: 10;
-}
-
-
-.slider {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 16%;
-    position: relative;
-}
-
-.slider-li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider-img {
-    margin: auto;
-    height: 266px;
-    width: 568px;
-    vertical-align: top;
-
-    opacity: 0;
-    visibility: hidden;
-
-    
-    transition: all 1.3s;
-}
-
-.slider-input {
-    background-color: white;
-
-    bottom: -37px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 30px;
-    z-index: 10;
-
-    border-radius: 7px;
-}
-
-.slider-label {
-    width: 1px;
-}
-
-.slider li:nth-child(1) input {
-    right: 0%;
-}
-
-.slider li:nth-child(2) input {
-    right: 41%;
-}
-
-.slider li:nth-child(3) input {
-    right: 83%;
-}
-
-
-.slider-li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
-
 
 .img_wel_div {
     width: 63%;
@@ -405,6 +335,7 @@ h3 {
     gap: 20px;
 
     transition: all 1.5s;
+    z-index: 101;
 }
 
 
@@ -514,9 +445,7 @@ footer {
 
 @media screen and (max-width: 790px){
     
-    header{
-        margin: 10px 5px 20px;
-    }
+    
 
     #logo_title{
         display: none;
