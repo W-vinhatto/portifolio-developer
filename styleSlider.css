@@ -68,6 +68,7 @@ header{
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .carrousel .list .item .content button{
